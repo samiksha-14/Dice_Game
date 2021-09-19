@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+      <div class="window hid">
+        <label for="p1">Enter your name Player-1</label>
+        <input type="text" id="p1" <br /><br />
+        <label for="p2">Enter your name Player-2</label>
+        <input type="text" id="p2" <br /><br />
+        <button class="submit">submit</button>
+      </div>
+
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">⏸ Hold</button>
+    </main>
+    <button class="user">📍 How to play</button>
+    <div class="UserGuide visiblity">
+      <img src="cross.png" class="close" />
+      <ul class="win">
+        <li>📌 This game is for two player only!</li>
+        <li>
+          📌 Firstly, player 1 and player 2 has to enter their names and submit
+          the names by clicking submit button.
+        </li>
+        <li>
+          📌 Now whatever player has their turn avtive will click on roll dice
+        </li>
+        <li>
+          📌Now the scores players are getting after rolling the dice would be
+          added to their current scores simultaneously until 1 appear on the
+          dice
+        </li>
+        <li>
+          📌As soon as 1 appear on the dice the active player will loose all the
+          current score
+        </li>
+        <li>
+          📌 When player clicks on the hold button, the other player's turn
+          takes place.
+        </li>
+        <li>📌 The player who got 100 scores first will win!!</li>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
